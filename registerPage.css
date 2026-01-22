@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.containerRegister {
+  padding: 0px;
+  gap: 2px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+
+  background-color: white;
+}
+
+.kiri {
+  flex: 2;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: #2092e9;
+  color: white;
+}
+
+.isiKiri {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  max-width: 420px;
+
+  text-align: left;
+}
+
+.kanan {
+  padding: 20px;
+  gap: 5%;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  text-align: left;
+
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.formkanan {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.informasiNama {
+  display: flex;
+  flex-direction: row;
+
+  gap: 5px;
+}
+
+.informasiKontak {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.informasiAlamat {
+  display: flex;
+  flex-direction: row;
+
+  gap: 5px;
+}
