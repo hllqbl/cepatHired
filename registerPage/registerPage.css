@@ -44,6 +44,25 @@ body {
   text-align: left;
 }
 
+.isiKiri h1 {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.isiKiri h2 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.3;
+
+  color: black;
+}
+
+.isiKiri p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
 .kanan {
   padding: 20px;
   gap: 5%;
@@ -52,7 +71,7 @@ body {
   flex-direction: column;
   flex: 1;
 
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 
   text-align: left;
@@ -87,4 +106,8 @@ body {
   flex-direction: row;
 
   gap: 5px;
+}
+
+.kanan > button {
+  border-radius: 15%;
 }
