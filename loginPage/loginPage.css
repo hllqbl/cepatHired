@@ -1,44 +1,140 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   box-sizing: border-box;
+
+  font-family: Arial, sans-serif;
 }
 
-.utama {
-  display: flex;
-  flex-direction: row;
-
+body {
   height: 100vh;
-  padding: 20px;
 }
 
-.login {
+.kontainer {
+  display: flex;
+  height: 100vh;
+}
+
+.kiri {
+  flex: 1;
+  display: flex;
+
+  justify-content: center; /* tengah layar */
+  align-items: center;
+
+  background: white;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 420px;
+  gap: 14px;
+
   display: flex;
   flex-direction: column;
-  flex: 2.5;
 
-  align-items: center;
-  justify-content: center;
   text-align: left;
-
-  gap: 20px;
 }
 
-.bagianSatu {
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
+.form-wrapper > h1,
+p,
+img {
   text-align: center;
+}
 
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+}
+
+.social {
+  display: flex;
   gap: 10px;
 }
 
-.gambar {
-  background-color: black;
+.social button {
+  flex: 1;
+  padding: 10px;
+}
 
+.divider {
   display: flex;
-  flex: 1.5;
+  align-items: center;
+
+  gap: 10px;
+  font-size: 12px;
+
+  color: #777;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+
+  background: #ccc;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px;
+
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 12px;
+}
+
+.login-btn {
+  margin-top: 10px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 20px;
+
+  background: #1992e4;
+  color: white;
+
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.register {
+  font-size: 12px;
+
+  text-align: center;
+}
+
+.kanan {
+  flex: 1;
+  padding: 40px;
+
+  background: #ffffff;
+}
+
+.kanan > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

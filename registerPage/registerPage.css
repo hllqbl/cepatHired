@@ -80,18 +80,28 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.kanan,
+.kanan label,
+.kanan p {
+  color: #111;
+}
+
 .formkanan {
   display: flex;
   flex-direction: column;
 
-  gap: 5px;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
 }
 
 .informasiNama {
   display: flex;
-  flex-direction: row;
+  gap: 12px;
+}
 
-  gap: 5px;
+.informasiNama .field {
+  flex: 1;
 }
 
 .informasiKontak {
@@ -103,11 +113,57 @@ body {
 
 .informasiAlamat {
   display: flex;
-  flex-direction: row;
+  gap: 12px;
+}
 
-  gap: 5px;
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.informasiAlamat .field {
+  flex: 1;
 }
 
 .kanan > button {
-  border-radius: 15%;
+  margin-top: 10px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 20px;
+
+  background: #1992e4;
+  color: white;
+
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 13px;
+  color: #555;
+}
+
+.field label {
+  font-size: 13px;
+  color: #555;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  background-color: #ffffff;
+  font-size: 14px;
 }

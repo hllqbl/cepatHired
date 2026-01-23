@@ -2,56 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page Nalar</title>
-
-    <link rel="stylesheet" href="loginPage.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="loginPage.css" />
 </head>
 
 <body>
-    <main>
-        <div class="utama">
-            <div class="login">
-                <div class="bagianSatu">
-                    <img src="" alt="logo">
-                    <h2>Log in to your Account</h2>
-                    <p>Welcome back! select method login</p>
-                    <div class="tombolLogin">
-                        <button>google</button>
-                        <button>facebook</button>
-                    </div>
+
+    <div class="kontainer">
+
+        <div class="kiri">
+            <div class="form-wrapper">
+
+                <img src="" alt="Logo" class="logo" />
+
+                <h1>Log in to your Account</h1>
+                <p class="subtitle">Welcome back! Select method log in:</p>
+
+                <div class="social">
+                    <button>Google</button>
+                    <button>Facebook</button>
+                </div>
+
+                <div class="divider">
+                    <span></span>
                     <p>or continue with email</p>
+                    <span></span>
                 </div>
-                <div class="emailLogin">
-                    <div class="emailLogin">
-                        <p>email</p>
-                        <input type="text">
-                    </div>
-                    <div class="passwordLogin">
-                        <p>password</p>
-                        <input type="text">
-                    </div>
-                    <div class="confirmPass">
-                        <p>confirm password</p>
-                        <input type="text">
-                        <div class="confirmPass">
-                            <div class="rememberMe">
-                                <input type="checkbox" name="" id="">
-                                <p>Remember me!</p>
-                            </div>
-                            <p>forgot your password?</p>
-                        </div>
-                    </div>
+
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email">
                 </div>
-                <button>login</button>
-                <p>don't have account? <a href="">register now</a></p>
-            </div>
-            <div class="gambar">
-                <img src="" alt="bcg">
+
+                <div class="field">
+                    <label>Password</label>
+                    <input type="password">
+                </div>
+
+                <div class="field">
+                    <label>Confirm Password</label>
+                    <input type="password">
+                </div>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#">Forgot your password?</a>
+                </div>
+
+                <button class="login-btn">Login</button>
+
+                <p class="register">
+                    Don’t have account? <a href="#">Register Now</a>
+                </p>
+
             </div>
         </div>
-    </main>
+
+        <div class="kanan">
+            <img src="" alt="bcg">
+        </div>
+
+    </div>
+
 </body>
 
 </html>
