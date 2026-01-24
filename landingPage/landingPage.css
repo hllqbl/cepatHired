@@ -153,8 +153,99 @@
 
 .galeriGrid {
   flex: 4;
+  grid-gap: 10px;
+  margin-bottom: 10px;
 
   display: grid;
-  grid-template-columns: repeat(1fr, 4);
-  grid-template-rows: repeat(1fr, auto);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.kartu {
+  height: 100px;
+  width: 100%;
+
+  background-color: #2092e9;
+}
+
+.kartu > img {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  padding: 4px;
+
+  object-fit: cover;
+}
+
+.funfact {
+  flex: 1;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+
+  background-color: #2092e9;
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.funfact > p {
+  font-size: 30px;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: row;
+
+  gap: 5px;
+  padding: 20px;
+}
+
+.aboutKiri {
+  flex: 1;
+}
+
+.aboutKanan {
+  flex: 3;
+
+  text-align: left;
+}
+
+.aboutKanan > h2 {
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.aboutKanan > h1 {
+  margin-bottom: 25px;
+  color: #111;
+}
+
+.aboutKanan > p {
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.banyakPeminat {
+  display: flex;
+  flex-direction: row;
+}
+
+.kiriPeminat {
+  flex: 2;
+}
+
+.kananPeminat {
+  display: flex;
+  flex-direction: row;
+
+  flex: 3;
+  gap: 5px;
+}
+
+.peminat {
+  background-color: #2092e9;
 }

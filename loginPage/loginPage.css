@@ -20,7 +20,7 @@ body {
   flex: 1;
   display: flex;
 
-  justify-content: center; /* tengah layar */
+  justify-content: center;
   align-items: center;
 
   background: white;
