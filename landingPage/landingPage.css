@@ -45,7 +45,7 @@
 }
 
 .containerMain {
-  background-color: rgb(255, 255, 255);
+  background-color: #e9ebed;
 
   display: flex;
   flex-direction: column;
@@ -183,7 +183,7 @@
   margin-bottom: 10px;
 
   background-color: #2092e9;
-  color: white;
+  color: #e9ebed;
 
   display: flex;
 
@@ -200,12 +200,17 @@
   display: flex;
   flex-direction: row;
 
-  gap: 5px;
+  gap: 20px;
   padding: 20px;
+
+  color: #e9ebed;
 }
 
 .aboutKiri {
+  background-color: #2092e9;
+
   flex: 1;
+  border-radius: 8px;
 }
 
 .aboutKanan {
@@ -227,25 +232,125 @@
 .aboutKanan > p {
   margin-bottom: 15px;
   color: #111;
+  text-align: justify;
 }
 
 .banyakPeminat {
   display: flex;
   flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 80vh;
 }
 
 .kiriPeminat {
-  flex: 2;
+  flex: 1;
+
+  text-align: left;
+}
+
+.kiriPeminat > span {
+  color: #ff950a;
 }
 
 .kananPeminat {
   display: flex;
   flex-direction: row;
 
-  flex: 3;
+  flex: 4;
   gap: 5px;
 }
 
 .peminat {
   background-color: #2092e9;
+
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.kategori {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+  margin-bottom: 2%;
+}
+
+.gridKategori {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.kartu2 {
+  height: 120px;
+
+  background-color: #2092e9;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #333;
+  color: white;
+
+  padding: 60px 40px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.gridFooter {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+}
+
+.aboutFooter {
+  grid-area: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  text-align: justify;
+}
+
+.companyFooter {
+  grid-area: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  text-align: justify;
+}
+
+.informationFooter {
+  grid-area: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  text-align: justify;
+}
+
+.subscribeFooter {
+  grid-area: auto;
+
+  text-align: justify;
 }
