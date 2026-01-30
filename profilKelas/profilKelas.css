@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  background-color: #f4f5f6;
+
+  padding: 24px;
+}
+
+.navbar > ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 24px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+
+  gap: 8px;
+  padding: 5px;
+  border: 5px solid;
+  border-radius: 35px;
+}
+
+.icon > img {
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "deskripsi deskripsi deskripsi"
+    "pengajar pengajar pengajar"
+    "course  course course";
+
+  gap: 24px;
+}
+
+.deskripsi {
+  display: flex;
+  flex-direction: row;
+
+  padding: 24px;
+
+  background-color: #2092e9;
+
+  grid-area: deskripsi;
+}
+
+.pengajar {
+  background-color: #f4f5f6;
+
+  grid-area: pengajar;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  gap: 24px;
+}
+
+.pengajar > h2 {
+  margin-bottom: 30px;
+}
+
+.profilPengajar {
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+
+  align-items: center;
+  text-align: justify;
+}
+
+.deskripsiCourse {
+  display: flex;
+  flex-direction: column;
+}
+
+.apaYgDipelajari {
+  padding: 10px;
+  gap: 24px;
+
+  background-color: #f4f5f6;
+
+  grid-area: course;
+}
+
+.layout > .pengajar,
+.apaYgDipelajari {
+  margin: 24px;
+}
