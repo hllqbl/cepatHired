@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  background-color: #f4f5f6;
+
+  padding: 24px;
+}
+
+.navbar > ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 24px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+
+  gap: 8px;
+  padding: 5px;
+  border: 5px solid;
+  border-radius: 35px;
+}
+
+.icon > img {
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
+
+  gap: 24px;
+  margin: 24px;
+  padding: 24px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.isiKursus {
+  background-color: #f4f5f6;
+}
+
+.konten {
+  background-color: #f4f5f6;
+}
+
+.isiKursus {
+  display: flex;
+  flex-direction: column;
+
+  padding: 12px;
+  gap: 15px;
+}
+
+.detailIsi {
+  gap: 24px;
+  margin: 24px;
+}
+
+.judul {
+  align-items: center;
+  justify-content: center;
+}
+
+.module {
+  padding: 12px;
+}
+
+.searchBtn,
+.module {
+  background-color: white;
+
+  align-items: flex-start;
+
+  margin: 24px;
+}
+
+.konten {
+  display: flex;
+  flex-direction: column;
+
+  padding: 12px;
+  gap: 15px;
+}
