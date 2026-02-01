@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  background-color: #f4f5f6;
+
+  padding: 24px;
+}
+
+.navbar > ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 24px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+
+  gap: 8px;
+  padding: 5px;
+  border: 5px solid;
+  border-radius: 35px;
+}
+
+.icon > img {
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "deskripsi deskripsi deskripsi"
+    "filter class class";
+
+  gap: 24px;
+}
+
+.deskripsi {
+  grid-area: deskripsi;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  min-width: 50px;
+  padding: 24px;
+
+  background-color: #2092e9;
+}
+
+.deskripsi > h2 {
+  color: #f4f5f6;
+
+  font-size: 40px;
+}
+
+.deskripsi > p {
+  color: #f4f5f6;
+
+  font-size: 20px;
+
+  margin-bottom: 30px;
+}
+
+.searchBtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  grid-area: filter;
+
+  gap: 12px;
+  padding: 24px;
+
+  background-color: #bfc3c4;
+}
+
+.filterCari {
+  display: flex;
+
+  text-align: justify;
+}
+
+.checkbox {
+  display: flex;
+  cursor: pointer;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.classList {
+  background-color: #bfc3c4;
+
+  display: grid;
+  grid-area: class;
+
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+  gap: 12px;
+  padding: 24px;
+}
+
+.layout > .filter,
+.classList {
+  margin: 24px;
+}
+
+.cardKelas {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f4f5f6;
+  padding: 10px;
+  gap: 10px;
+}
+
+.judulKelas {
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+}
+
+.statusKelas {
+  display: flex;
+
+  gap: 10px;
+}
+
+.statusKelas p {
+  margin: 0;
+}
+
+.infoKelas {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}

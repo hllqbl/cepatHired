@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
+/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
-  flex-direction: row;
 
   justify-content: space-around;
 
@@ -19,28 +19,25 @@
   list-style: none;
 
   display: flex;
-  flex-direction: row;
 
   gap: 24px;
 }
 
 .icon {
   display: flex;
-  flex-direction: row;
 
   gap: 8px;
   padding: 5px;
+
   border: 5px solid;
   border-radius: 35px;
 }
 
-.icon > img {
-}
-
+/* ===== LAYOUT UTAMA ===== */
 .layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "deskripsi deskripsi"
     "ujian progres"
@@ -54,28 +51,69 @@
   grid-area: deskripsi;
 
   background-color: #f4f5f6;
+
+  padding: 24px;
 }
 
 .ujian {
   grid-area: ujian;
-
   background-color: #f4f5f6;
+  padding: 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img deskripsi"
+    "informasi informasi";
+
+  gap: 24px;
 }
 
+/* ===== GRID DALAM UJIAN ===== */
+.imgUjian {
+  grid-area: img;
+}
+
+.deskripsiUjian {
+  grid-area: deskripsi;
+}
+
+.informasiUjian {
+  grid-area: informasi;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.isiInformasi {
+  display: flex;
+  flex-direction: row;
+
+  gap: 5px;
+}
+
+/* ===== AREA SAMPING ===== */
 .petunjukUjian {
   grid-area: petunjuk;
 
   background-color: #f4f5f6;
+
+  padding: 24px;
 }
 
 .progres {
   grid-area: progres;
 
   background-color: #f4f5f6;
+
+  padding: 24px;
 }
 
 .pratinjauSertifikat {
   grid-area: pratinjau;
 
   background-color: #f4f5f6;
+
+  padding: 24px;
 }
