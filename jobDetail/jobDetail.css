@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  background-color: #f4f5f6;
+
+  padding: 24px;
+}
+
+.navbar > ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 24px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+
+  gap: 8px;
+  padding: 5px;
+  border: 5px solid;
+  border-radius: 35px;
+}
+
+.icon > img {
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+
+  grid-template-areas:
+    "img informasiJob"
+    "deskripsiJob informasiPerusahaan";
+
+  gap: 24px;
+  padding: 24px;
+}
+
+.img {
+  grid-area: img;
+
+  background-color: #f4f5f6;
+
+  padding: 10px;
+}
+
+.informasiJob {
+  grid-area: informasiJob;
+
+  background-color: #f4f5f6;
+
+  padding: 10px;
+}
+
+.deskripsiJob {
+  grid-area: deskripsiJob;
+
+  background-color: #f4f5f6;
+
+  padding: 10px;
+}
+
+.informasiPerusahaan {
+  grid-area: informasiPerusahaan;
+
+  background-color: #f4f5f6;
+
+  padding: 10px;
+}
